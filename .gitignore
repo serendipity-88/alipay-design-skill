@@ -1,0 +1,32 @@
+# macOS
+.DS_Store
+
+# Playwright MCP logs
+.playwright-mcp/
+
+# Test results and preview app
+test-results/
+
+# Development prototypes (not part of the skill)
+prototypes/
+
+# Skill comparison files
+skill-comparison/
+
+# Root-level scripts (duplicate of skill dir copy)
+/scripts/
+
+# Superpowers plugin config
+.superpowers/
+
+# Node modules
+node_modules/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Upgrade logs (development artifacts)
+skill-upgrade-*/

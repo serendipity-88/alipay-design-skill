@@ -1,0 +1,34 @@
+Alipay Design Skill
+Copyright (c) 2024 Alipay Design Skill Contributors
+
+---
+
+Third-party notices:
+
+This project includes design token references adapted from the following
+open-source projects:
+
+- antd-mini (https://github.com/ant-design/ant-design-mini)
+  Copyright (c) Ant Financial. Licensed under the MIT License.
+  Files: assets/antd-mini-color.less, assets/antd-mini-index.less
+
+- antd-mobile (https://github.com/ant-design/ant-design-mobile)
+  Copyright (c) Ant Financial. Licensed under the MIT License.
+  File: assets/antd-mobile-theme-default.css
+
+Code templates reference components from:
+
+- antd (https://github.com/ant-design/ant-design)
+  Copyright (c) Ant Financial. Licensed under the MIT License.
+
+- @ant-design/pro-components (https://github.com/ant-design/pro-components)
+  Copyright (c) Ant Financial. Licensed under the MIT License.
+
+---
+
+Trademark notice:
+
+Alipay, 支付宝, Ant Design, and related names are trademarks of their
+respective owners. This project is an independent open-source skill for design
+workflow and code-generation assistance. It is not affiliated with, endorsed
+by, or sponsored by Ant Group.

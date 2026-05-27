@@ -1,0 +1,8 @@
+interface:
+  display_name: "Alipay Design"
+  short_description: "支付、金融、生活服务类 UI 设计工作流"
+  brand_color: "#1677FF"
+  default_prompt: "Use $alipay-design to design a payment result page with platform-specific components and quality checks."
+
+policy:
+  allow_implicit_invocation: true
