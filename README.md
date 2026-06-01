@@ -1,35 +1,38 @@
-# Alipay Design Skill
+# Payflow Design Skill
 
-让 coding agent 生成更接近真实支付、金融、生活服务产品的界面，而不是停留在“把组件摆上去”的层面。
+让 coding agent 生成更接近真实支付、计费、交易、商户经营与生活服务产品的界面，而不是停留在“把组件摆上去”的层面。
 
-Alipay Design Skill 不是组件库，也不是设计规范的简单搬运，而是为 agent 准备的一套「产品设计判断力」。当你说“做一个转账成功页”“做一个交易查询后台”“做一个附近优惠商家页”时，agent 不应该立刻开始写卡片和按钮，而应该先判断用户刚经历了什么、页面要承接哪种情绪、信息密度应该多高、应该使用移动端还是 Web 后台，以及哪些业务状态不能遗漏。
+Payflow 不是一个狭义的“支付页”概念。这里的 flow 指用户、资金、订单、权益、商户和运营动作之间的完整流转：从收银台到支付结果，从账单计费到交易流水，从本地生活服务到商户后台，从优惠承接到营销增长。Payflow Design Skill 关注的是这些高信任、高转化、高状态密度场景里的产品设计判断。
 
-组件库解决的是“有什么组件”。Alipay Design Skill 解决的是“什么时候该用什么结构、什么层级、什么语气，以及最终交付的页面是否像一个可信的支付服务产品”。
+组件库解决的是“有什么组件”。Payflow Design Skill 解决的是“什么时候该用什么结构、什么层级、什么语气，以及最终交付的页面是否像一个可信的交易服务产品”。
 
 ## 为什么做这个
 
 现在的 coding agent 已经很会写 React，也很会调用 `antd`、`antd-mobile` 这类组件库。但一到真实业务界面，生成结果经常会暴露出几个问题：
 
 - 把结果页写成普通信息卡片，缺少完成后的情绪承接
-- 把运营页写成堆满卡片的活动海报，缺少信任递进和行动路径
-- 把后台页写成通用 CRUD，缺少筛选、状态、空态、权限和批量操作的完整性
+- 把计费、账单、流水页面写成通用 CRUD，缺少状态、异常、权限和批量操作
+- 把本地生活和商户经营页面写成普通列表，缺少转化路径和经营目标
+- 把营销增长页面写成活动海报，缺少信任递进、利益表达和行动闭环
 - 在 H5、小程序、Web 后台之间混用组件、单位和交互习惯
-- 视觉上看起来“能跑”，但不像一个成熟支付产品
+- 视觉上看起来“能跑”，但不像一个成熟的交易服务产品
 
-Alipay Design Skill 把这些判断前置成工作流：先理解场景，再选择页面模式、组件体系、视觉 token 和代码模板，最后通过检查脚本完成交付前自检。
+Payflow Design Skill 把这些判断前置成工作流：先理解场景，再选择页面模式、组件体系、视觉 token 和代码模板，最后通过检查脚本完成交付前自检。
 
 ## 适合谁
 
-如果你经常让 agent 生成支付、金融、生活服务、电商交易、运营承接、商户后台、管理端表单这类页面，Alipay Design Skill 会很有用。
+如果你经常让 agent 生成支付、计费、金融、交易流、本地生活、商户数字化经营、营销增长、运营承接、管理端表单这类页面，Payflow Design Skill 会很有用。
 
 典型适用场景包括：
 
-- 移动端支付结果页、收银台、签约确认、活动承接页
-- 优惠券、附近商家、会员权益、安全教育等生活服务页面
+- 支付结果页、收银台、签约确认、订单确认、退款和售后结果
+- 计费账单、订阅套餐、发票、扣费明细、交易流水和对账页面
+- 本地生活服务、附近商家、优惠券、会员权益、活动承接页面
+- 商户后台、门店经营、商品服务管理、经营数据看板和营销配置
 - Web 后台的表格查询、分步表单、单据详情、成员管理、设置页
-- 需要“支付服务类产品气质”的原型、Demo 或可运行页面
+- 需要“交易服务类产品气质”的原型、Demo 或可运行页面
 
-Alipay Design Skill 不试图替代设计师，也不试图替代组件库。这个项目的价值在于，把一部分高频、稳定、可复用的产品设计判断交给 agent，让第一次生成就更接近可评审的版本。
+Payflow Design Skill 不试图替代设计师，也不试图替代组件库。这个项目的价值在于，把一部分高频、稳定、可复用的产品设计判断交给 agent，让第一次生成就更接近可评审的版本。
 
 ## 工作方式
 
@@ -47,17 +50,17 @@ Skill 被触发后，会按一条相对固定的路径推进：
 
 ## 和直接使用 Ant Design 的差异
 
-Ant Design、Ant Design Mobile、Ant Design Mini 和 Pro Components 提供了很好的组件与设计基础。Alipay Design Skill 是面向 agent 的上层工作流，把公开规范、组件习惯、页面模式和业务场景组织成可执行的生成过程。
+Ant Design、Ant Design Mobile、Ant Design Mini 和 Pro Components 提供了很好的组件与设计基础。Payflow Design Skill 是面向 agent 的上层工作流，把公开规范、组件习惯、页面模式和业务场景组织成可执行的生成过程。
 
 简单说：
 
-| 直接使用组件库 | 使用 Alipay Design Skill |
+| 直接使用组件库 | 使用 Payflow Design Skill |
 | --- | --- |
 | 你告诉 agent 用哪个组件 | 先帮助 agent 判断页面应该怎么组织 |
 | 关注单个组件是否正确 | 关注完整页面是否像真实业务 |
 | 容易遗漏 loading / empty / error | 把状态完整性放进交付检查 |
 | 多端差异靠人工提醒 | 先区分 H5 / 小程序 / Web 后台 |
-| 输出常常像通用模板 | 输出更接近支付服务类产品语境 |
+| 输出常常像通用模板 | 输出更接近交易服务类产品语境 |
 
 ## 安装
 
@@ -66,28 +69,28 @@ Ant Design、Ant Design Mobile、Ant Design Mini 和 Pro Components 提供了很
 个人级安装：
 
 ```bash
-cp -R alipay-design ~/.claude/skills/alipay-design
+cp -R payflow-design ~/.claude/skills/payflow-design
 ```
 
 项目级安装：
 
 ```bash
 mkdir -p .claude/skills
-cp -R alipay-design .claude/skills/alipay-design
+cp -R payflow-design .claude/skills/payflow-design
 ```
 
 ### Codex
 
 ```bash
-cp -R alipay-design ~/.codex/skills/alipay-design
+cp -R payflow-design ~/.codex/skills/payflow-design
 ```
 
 ### 其他 Coding Agent CLI
 
-把 `alipay-design/` 作为完整 Skill 目录安装，并保留目录内的相对路径：
+把 `payflow-design/` 作为完整 Skill 目录安装，并保留目录内的相对路径：
 
 ```text
-alipay-design/
+payflow-design/
   SKILL.md
   references/
   assets/
@@ -101,21 +104,25 @@ Skill 目录内资源都使用相对路径，例如 `references/design-intent.md
 你可以这样使用：
 
 ```text
-用 alipay-design 做一个 H5 转账成功页，要有优惠承接和完成按钮
+用 payflow-design 做一个 H5 转账成功页，要有优惠承接和完成按钮
 ```
 
 ```text
-用 alipay-design 做一个 Web 后台交易流水查询页，要有筛选、导出、空态和错误态
+用 payflow-design 做一个 Web 后台交易流水查询页，要有筛选、导出、空态和错误态
 ```
 
 ```text
-用 alipay-design 设计一个附近优惠商家列表页，偏生活服务运营场景
+用 payflow-design 设计一个附近优惠商家列表页，偏本地生活和营销增长场景
+```
+
+```text
+用 payflow-design 做一个商户经营看板，包含交易趋势、门店表现和营销活动配置
 ```
 
 ## 目录结构
 
 ```text
-alipay-design/
+payflow-design/
 ├── SKILL.md
 ├── LICENSE
 ├── NOTICE
@@ -140,7 +147,7 @@ alipay-design/
 生成 `.tsx` 或 `.html` 后，可以运行静态检查脚本：
 
 ```bash
-bash alipay-design/scripts/verify-design.sh <output-file>
+bash payflow-design/scripts/verify-design.sh <output-file>
 ```
 
 脚本会检查平台混用、旧色值、emoji 图标、inline style、非标间距、纯黑阴影、卡片描边、三态缺失等问题。
@@ -149,4 +156,4 @@ bash alipay-design/scripts/verify-design.sh <output-file>
 
 本项目基于公开设计资料和开源组件库进行 Skill 化整理，面向学习、原型和代码生成场景。相关产品名和商标归各自权利人所有。
 
-MIT License，详见 [alipay-design/LICENSE](alipay-design/LICENSE)。第三方归属说明见 [alipay-design/NOTICE](alipay-design/NOTICE)。
+MIT License，详见 [payflow-design/LICENSE](payflow-design/LICENSE)。第三方归属说明见 [payflow-design/NOTICE](payflow-design/NOTICE)。

@@ -149,8 +149,8 @@ const TapToPayPayment: React.FC<PaymentPageProps> = ({
         {mode === 'waiting' ? (
           /* ── 支付页：信任区 ── */
           <div className="ttp-trust-area">
-            {/* 品牌标识 — 蓝色渐变「支」字 */}
-            <div className="ttp-alipay-logo">支</div>
+            {/* 品牌标识 — 蓝色渐变字标 */}
+            <div className="ttp-brand-logo">P</div>
             <div className="ttp-security-text">安全支付中</div>
           </div>
         ) : (
@@ -320,7 +320,7 @@ const TapToPayPayment: React.FC<PaymentPageProps> = ({
         .ttp-trust-area {
           text-align: center;
         }
-        .ttp-alipay-logo {
+        .ttp-brand-logo {
           width: 48px;
           height: 48px;
           margin: 0 auto 8px;

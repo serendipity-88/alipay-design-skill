@@ -1,0 +1,8 @@
+interface:
+  display_name: "Payflow Design"
+  short_description: "支付、计费、交易、商户经营、本地生活与营销增长 UI 工作流"
+  brand_color: "#1677FF"
+  default_prompt: "Use $payflow-design to design a merchant growth dashboard with transaction, billing, and campaign states."
+
+policy:
+  allow_implicit_invocation: true
